@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<htlm lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica Lenguaje de Marcado HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 15px; line-height: 1.5; background-color: #FFF0F5;}
+        h1, h2 { color: #0d0e0f; }
+        div.section { border: 1px solid #271f1f; padding: 10px; margin-bottom: 20px;}
+
+        table { border-collapse: collapse; widht: 50%; margin-top: 10px;}
+        table, th, td { border: 1px solid black; padding: 5px; text-aling: left;}
+     </style>
+</head>
+<body>
+
+<h1>Práctica de Lenguaje de Marcado HTML</h1>
+<p>Está página contiene ejemplos de todos los temas 2.1-2.7 de HTML.</P>
+
+<!-- 2.2 Representación de documentos -->
+<div class="section">
+    <h2>2.2 Representación de documentos</h2>
+    <p>Este es un párrafo simple.</p>
+    <b>Texto en negrita</b>
+    <i>Texto en cursiva</i>
+    <u>Texto subrayado</u>
+</div> 
+
+<!-- 2.3 Tipos de datos básicos --> 
+<div class="section">
+    <h2>2.3 Tipos de datos básicos </h2>
+    <p>Texto: Hola Mundo</p>
+    <p>Numero: 2025</p>
+    <p>Booleano (checkbox activo): <input type="checkbox" checked></p>
+    <p>Enlace a otra sección: <a href="#formularios">Ir a Formularios </a></p>
+ 
+ </div>
+
+<!-- 2.4 Estructura global de un documento --> 
+<div class="section">
+    <h2>2.4 Estructura global</h2>
+    <p> Todo documento HTML tiene una Estructura mínima con<code>&lt;html&gt;</code>,<code>&lt;head&gt;</code> y  <code>&lt;body&gt;</code>.</p>
+</div>
+
+<!-- 2.5 Elementos básicos -->
+<div class="section">
+    <h2>2.5 Elementos básicos </h2>
+    <h3>Listas</h3>
+    <ul>
+        <li>Azul</li>
+        <li>Morado</li>
+        <li>Rosa</li>
+    </ul>
+
+    <h3>Tabla</h3>
+    <table style="border: 1px solid black;  background-color: #AFEEEE;"><tr style="background-color: #00008B;">
+        <tr><th>Nombre</th><th>Edad</th></tr>
+        <tr><td>Lilia</td><td>20</td></tr>
+        <tr><td>María </td><td>18</td></tr>
+        <tr><td>Luis</td><td>23</td></tr>
+        <tr><td>Mariana</td><td>26</td></tr>
+    </table>
+
+    <h3>Imagen</h3>
+    <p>Imagen local(<code>imagen.jpg</code>carpeta):</p>
+    <img src="imagen.jpg" alt="Mi imagen" width="200">
+</div>
+
+
+<!--2.6 Estructura y disposición -->
+<div class="section">
+    <h2>2.6 Estructura y disposición </h2>
+    <div style="border: 1px solid black; padding: 5px;">soy un div (bloque)</div>
+    <p>Soy un párrafo (bloque)</p>
+    <span style="color:red">soy un span (en línea)</span>
+    <b>Negrita en linea</b>
+
+</div>
+
+
+<!--2.7 Formularios -->
+<div class="section" id="formularios">
+    <h2> 2.7 Formularios</h2>
+    <form>
+        <label>Nombre: <input type="text" name="nombre"></label><br><br>
+        <label>Edad: <input type="number"  name="edad"></label><br><br>
+        <label>Contraseña: <input type="password" name="clave"></label><br><br>
+        <input type="radio" name="género" value="M"> Masculino
+        <input type="radio" name="genero" value="F"> Femenino<br><br>
+        <input type="checkbox" name="acepto"> Aceptó términos <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+   
+</div>
+
+</body>
+</htlm>
